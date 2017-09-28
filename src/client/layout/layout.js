@@ -1,6 +1,10 @@
 'use strict';
 
-var app = angular.module('app.layout',[]);
+var app = angular.module('app.layout',['smoothScroll']);
+
+app.controller('layoutController',function(){
+
+});
 
 app.directive('bhrBanner',function() {
   return {

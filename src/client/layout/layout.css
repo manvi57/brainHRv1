@@ -1,39 +1,47 @@
 /* body */
 
-body{
+body {
   margin: 0;
 }
 
-header, footer {
+header.bhr, footer.bhr {
   overflow: hidden;
   background-color: black;
-  padding: 15px;
 }
 
 header {
+  width: 100%;
+  display: block;
   border-bottom : 5px solid #ff6600;
+  top: 0;
+  position: sticky;
+  z-index: 999;
+}
+
+.bhrContent {
+padding: 120px;
 }
 
 /* Top Navigation Bar */
 
-.logo{
+.logoContainer {
+  padding: 0 10px 0 10px;
+}
+
+.logo {
   font-size: 20px;
   float: left;
   color: white;
 }
 
-.logoHighlight{
+.logoHighlight {
   font-size: 20px;
   float: left;
   color: #ff8d3f;
   padding: 0 10px 0 0;
 }
 
-nav.layoutNavBar ul{
-    list-style-type: none;
-}
-
-nav.layoutNavBar li {
+.socialNav li {
     float: right;
     padding: 0 10px 0 10px;
 }
@@ -49,17 +57,36 @@ nav.layoutNavBar a:hover {
     color: #ff8d3f;
 }
 
+nav.layoutNavBar a.active {
+    background-color: #ff8d3f;
+}
+
+nav.layoutNavBar a.active:hover {
+    background-color: #ff8d3f;
+    color: black;
+}
+
+/* Quote slides */
+blockquote {
+  border: none;
+}
+.quoteContainer {
+  background-color: #E7E8E8;
+}
+
 /* Panel effect */
-.panel1{
+.panel1 {
     background-color: #ffffff;
     color: 	#353c3f;
     height: 100%;
+    width: 100%;
     margin: 0;
 }
 
-.panel2{
+.panel2 {
     background-color: #353c3f;
     color: #ffffff;
     height: 100%;
+    width: 100%;
     margin: 0;
 }
