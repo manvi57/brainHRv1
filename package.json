@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/btrvarun/brainHRv1#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.15.4",
     "jquery": "^3.2.1",
     "popper.js": "^1.11.1"

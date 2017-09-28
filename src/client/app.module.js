@@ -4,5 +4,6 @@ var app = angular.module('app',[
   'app.layout',
   'app.aboutUs',
   'app.clients',
-  'app.services'
+  'app.services',
+  'app.login'
 ]);
