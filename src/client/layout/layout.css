@@ -4,6 +4,16 @@ body{
   margin: 0;
 }
 
+header, footer {
+  overflow: hidden;
+  background-color: black;
+  padding: 15px;
+}
+
+header {
+  border-bottom : 5px solid #ff6600;
+}
+
 /* Top Navigation Bar */
 
 .logo{
@@ -19,34 +29,37 @@ body{
   padding: 0 10px 0 0;
 }
 
-nav.topNavigationBar {
-    overflow: hidden;
-    background-color: black;
-    padding: 15px;
-}
-
-nav.topNavigationBar ul{
+nav.layoutNavBar ul{
     list-style-type: none;
 }
 
-nav.topNavigationBar li {
+nav.layoutNavBar li {
     float: right;
     padding: 0 10px 0 10px;
 }
 
-nav.topNavigationBar a {
+nav.layoutNavBar a {
     display: block;
     color: white;
     text-align: center;
     text-decoration: none;
 }
 
-nav.topNavigationBar a:hover:not(.logo) {
+nav.layoutNavBar a:hover {
     color: #ff8d3f;
 }
 
-/* */
+/* Panel effect */
+.panel1{
+    background-color: #ffffff;
+    color: 	#353c3f;
+    height: 100%;
+    margin: 0;
+}
 
-div.ng-view {
-  padding: 2%;
+.panel2{
+    background-color: #353c3f;
+    color: #ffffff;
+    height: 100%;
+    margin: 0;
 }

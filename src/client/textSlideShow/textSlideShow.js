@@ -1,11 +1,10 @@
 'use strict';
 
-var app = angular.module('textSlideShow', ['ngAnimate']);
+var app = angular.module('app.textSlideShow', ['ngAnimate']);
 
 app.directive('textSlideShow', function ($http) {
   return {
     restrict: 'AE',
-    replace: 'true',
     templateUrl: '/textSlideShow/textSlideShow.html',
     link: function(scope, element, attrs) {
       if(attrs.content) {
