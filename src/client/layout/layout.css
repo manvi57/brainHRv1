@@ -1,0 +1,52 @@
+/* body */
+
+body{
+  margin: 0;
+}
+
+/* Top Navigation Bar */
+
+.logo{
+  font-size: 20px;
+  float: left;
+  color: white;
+}
+
+.logoHighlight{
+  font-size: 20px;
+  float: left;
+  color: #ff8d3f;
+  padding: 0 10px 0 0;
+}
+
+nav.topNavigationBar {
+    overflow: hidden;
+    background-color: black;
+    padding: 15px;
+}
+
+nav.topNavigationBar ul{
+    list-style-type: none;
+}
+
+nav.topNavigationBar li {
+    float: right;
+    padding: 0 10px 0 10px;
+}
+
+nav.topNavigationBar a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav.topNavigationBar a:hover:not(.logo) {
+    color: #ff8d3f;
+}
+
+/* */
+
+div.ng-view {
+  padding: 2%;
+}

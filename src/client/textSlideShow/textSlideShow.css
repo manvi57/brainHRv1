@@ -1,0 +1,56 @@
+/* Animation */
+.shownSlide {
+  position: relative;
+  display: block;
+  -webkit-animation-name: slideEnter;
+  -webkit-animation-duration: 1.5s;
+  animation-name: slideEnter;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes slideEnter {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideEnter {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hiddenSlide {
+  display: none;
+  position: relative;
+}
+
+
+/* The dots/bullets/indicators */
+.hiddenDot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.shownDot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  background-color: #717171;
+}
