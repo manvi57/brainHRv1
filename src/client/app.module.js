@@ -5,6 +5,7 @@ var app = angular.module('app',[
   'app.aboutUs',
   'app.clients',
   'app.services',
+  'app.login',
   'ngAnimate'
 ]);
 
