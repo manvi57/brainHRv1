@@ -17,6 +17,7 @@ $(document).ready(function(){
       autoplay: true,
       autoplayTimeout: 4000,
       lazyLoad: true,
-      smartSpeed: 600
+      smartSpeed: 600,
+      loop: true
     });
 });

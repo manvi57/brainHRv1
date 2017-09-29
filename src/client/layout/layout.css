@@ -10,7 +10,6 @@ header.bhr, footer.bhr {
 }
 
 header {
-  width: 100%;
   display: block;
   border-bottom : 5px solid #ff6600;
   top: 0;
@@ -19,14 +18,10 @@ header {
 }
 
 .bhrContent {
-padding: 120px;
+  padding: 50px 0 50px 0;
 }
 
 /* Top Navigation Bar */
-
-.logoContainer {
-  padding: 0 10px 0 10px;
-}
 
 .logo {
   font-size: 20px;

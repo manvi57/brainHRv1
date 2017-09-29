@@ -14,8 +14,6 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 app.post('/authenticate',eswar.auth );
 
-
-
 app.listen(port,function(){
         console.log('server is running on '+port);
     });
