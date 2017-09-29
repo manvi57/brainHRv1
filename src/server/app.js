@@ -12,7 +12,7 @@ app.use(express.static('./')); // not secure , allows access to all files.
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 
-app.post("/authenticate",eswar.auth );
+app.post('/authenticate',eswar.auth );
 
 
 

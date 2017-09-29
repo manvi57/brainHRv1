@@ -1,9 +1,14 @@
 'use strict';
 
-var app = angular.module('app.layout',['smoothScroll']);
+var app = angular.module('app.layout',['smoothScroll', 'ngDialog']);
 
-app.controller('layoutController',function(){
-
+app.controller('layoutController',function($scope, ngDialog){
+  $scope.openLoginPage = function () {
+    ngDialog.open({
+      template: 'login/login.html',
+      className: 'ngdialog-theme-default'
+    });
+  }
 });
 
 app.directive('bhrBanner',function() {

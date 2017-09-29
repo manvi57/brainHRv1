@@ -10,7 +10,7 @@ app.directive('login',function(){
       });
 app.controller('loginController',function($scope)
         {
-          $scope.title = "Login"
+          $scope.title = 'Login';
           // $scope.login = function(){
           //
           // }

@@ -6,7 +6,7 @@ var app = angular.module('app',[
   'app.clients',
   'app.services',
   'app.login',
-  'ngAnimate'
+  'ngAnimate',
 ]);
 
 /*owl carousel slide show */
