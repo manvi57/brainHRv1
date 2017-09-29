@@ -13,7 +13,7 @@ header {
   display: block;
   border-bottom : 5px solid #ff6600;
   top: 0;
-  position: sticky;
+  position: fixed;
   z-index: 999;
 }
 
@@ -66,6 +66,7 @@ blockquote {
   border: none;
 }
 .quoteContainer {
+  margin-top: 100px;
   background-color: #E7E8E8;
 }
 
