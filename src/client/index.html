@@ -31,6 +31,7 @@
     <script src="src/client/layout/layout.js"></script>
     <script src="src/client/aboutUs/aboutUs.js"></script>
     <script src="src/client/clients/clients.js"></script>
+    <script src="src/client/contactUs/contactUs.js"></script>
     <script src="src/client/services/services.js"></script>
     <script src="src/client/login/login.js"></script>
 
@@ -39,7 +40,7 @@
 
   <body data-spy="scroll" data-target="#headerContentBar" data-offset="100">
 
-    <header class="bhr container-fluid">
+    <header class="bhr container-fluid" id="navTop">
       <div class="row">
         <div class="col align-self-center">
           <bhr-banner></bhr-banner>
@@ -53,6 +54,7 @@
 
     <div>
 
+      <!-- quotes slide show -->
       <div class="owl-carousel owl-theme owl-loaded quoteContainer bhrContent">
         <div>
           <blockquote class="text-center">
@@ -74,15 +76,24 @@
         </div>
       </div>
 
+      <!-- main page content -->
       <div about-us id="navAboutUs" class="panel1 bhrContent"></div>
       <div clients id="navClients" class="panel2 bhrContent"></div>
       <div services id="navServices" class="panel1 bhrContent"></div>
+      <div contact-us id="navContactUs" class="panel2 bhrContent"></div>
 
     </div>
 
+    <!-- button to navigate to the top -->
+    <a id="bhrGoTopButton" href="" ng-click="bhrGoTop()" title="Go to top"
+    scroll-to="navTop" easing="easeInCubic" offset="90"> <i class="fa fa-chevron-up" aria-hidden="true"></i> </a>
+
     <footer class="bhr">
-      <bhr-banner></bhr-banner>
+      <div class="container-fluid">
+        <bhr-banner></bhr-banner><span class="bhrFooterLicence">© 2017 - All Rights Reserved</span>
+      </div>
     </footer>
+
   </body>
 
 </html>

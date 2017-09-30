@@ -8,7 +8,7 @@ app.controller('layoutController',function($scope, ngDialog){
       template: 'login/login.html',
       className: 'ngdialog-theme-default'
     });
-  }
+  };
 });
 
 app.directive('bhrBanner',function() {

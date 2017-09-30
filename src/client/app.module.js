@@ -6,7 +6,8 @@ var app = angular.module('app',[
   'app.clients',
   'app.services',
   'app.login',
-  'ngAnimate',
+  'app.contactUs',
+  'ngAnimate'
 ]);
 
 /*owl carousel slide show */
@@ -21,3 +22,13 @@ $(document).ready(function(){
       loop: true
     });
 });
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("bhrGoTopButton").style.display = "block";
+    } else {
+        document.getElementById("bhrGoTopButton").style.display = "none";
+    }
+}

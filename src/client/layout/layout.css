@@ -7,14 +7,19 @@ body {
 header.bhr, footer.bhr {
   overflow: hidden;
   background-color: black;
+  display: block;
 }
 
-header {
-  display: block;
+header.bhr {
   border-bottom : 5px solid #ff6600;
   top: 0;
   position: fixed;
-  z-index: 999;
+  z-index: 90;
+}
+
+footer.bhr {
+  padding: 50px 0 50px 0;
+  border-top : 5px solid #ff6600;
 }
 
 .bhrContent {
@@ -24,16 +29,15 @@ header {
 /* Top Navigation Bar */
 
 .logo {
+  padding: 0;
+  margin: 0;
   font-size: 20px;
-  float: left;
   color: white;
 }
 
-.logoHighlight {
+.bhrFooterLicence {
   font-size: 20px;
-  float: left;
-  color: #ff8d3f;
-  padding: 0 10px 0 0;
+  color: white;
 }
 
 .socialNav li {
@@ -49,15 +53,17 @@ nav.layoutNavBar a {
 }
 
 nav.layoutNavBar a:hover {
-    color: #ff8d3f;
+    color: #ff6600;
+    border-radius: 10px;
 }
 
 nav.layoutNavBar a.active {
-    background-color: #ff8d3f;
+    background-color: #ff6600;
+    border-radius: 10px;
 }
 
 nav.layoutNavBar a.active:hover {
-    background-color: #ff8d3f;
+    background-color: #ff6600;
     color: black;
 }
 
@@ -85,4 +91,16 @@ blockquote {
     height: 100%;
     width: 100%;
     margin: 0;
+}
+
+/* Button to go to the top */
+#bhrGoTopButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  text-decoration: none;
+  color: #ff6600;
+
 }
