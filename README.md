@@ -1,4 +1,8 @@
-Steps to get it working:
-1. Clone the repository
-2. Navigate to the folder and use the command "gulp serve" to start the server
-3. In the browser go to the page "localhost:/5000"
+<div>
+  <b>Steps to get it working:</b>
+  <ol>
+    <li> Clone the repository </li>
+    <li> Navigate to the folder and use the command "gulp serve" to start the server </li>
+    <li> In the browser go to the page "localhost:/5000" </li>
+  </ol>
+</div>
