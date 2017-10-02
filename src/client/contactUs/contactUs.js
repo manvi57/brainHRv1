@@ -10,4 +10,13 @@ app.directive('contactUs',function() {
 });
 
 app.controller('contactUsController', function($http, $scope) {
+  $scope.saveContactInfo = function () {
+    $http.post('/contact-us-post',{
+      name: $scope.contactName,
+      email: $scope.contactEmail,
+      phone: $scope.contactPhone,
+      message: $scope.contactMessage
+    });
+    console.log('post request sent');
+  };
 });
