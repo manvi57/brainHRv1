@@ -11,6 +11,7 @@ var app = angular.module('app',[
 ]);
 
 /*owl carousel slide show */
+
 $(document).ready(function(){
   $('.owl-carousel').owlCarousel(
     {
@@ -23,12 +24,14 @@ $(document).ready(function(){
     });
 });
 
-window.onscroll = function() {scrollFunction()};
+/* scroll to top button functions */
+
+window.onscroll = function() {scrollFunction();};
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("bhrGoTopButton").style.display = "block";
+        document.getElementById('bhrGoTopButton').style.display = 'block';
     } else {
-        document.getElementById("bhrGoTopButton").style.display = "none";
+        document.getElementById('bhrGoTopButton').style.display = 'none';
     }
 }

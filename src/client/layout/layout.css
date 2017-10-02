@@ -68,6 +68,7 @@ nav.layoutNavBar a.active:hover {
 }
 
 /* Quote slides */
+
 blockquote {
   border: none;
 }
@@ -77,6 +78,7 @@ blockquote {
 }
 
 /* Panel effect */
+
 .panel1 {
     background-color: #ffffff;
     color: 	#353c3f;
@@ -94,6 +96,7 @@ blockquote {
 }
 
 /* Button to go to the top */
+
 #bhrGoTopButton {
   display: none;
   position: fixed;
