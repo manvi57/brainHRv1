@@ -5,8 +5,10 @@ var password = req.body.password;
 
 if (userName === 'eswar' && password === '123')
 {
-  res.render('src/client/admin/admin.html');
+  console.log("authenticated");
+  //res.render('src/client/admin/admin.html');
 }
 else {
-  res.render('src/client/login/login.html');
+  console.log("Failed")
+  //res.render('src/client/login/login.html');
 }};
