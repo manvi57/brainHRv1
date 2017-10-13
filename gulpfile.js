@@ -15,7 +15,7 @@ gulp.task('style', function(){
     .pipe(jscs());
 });
 
-gulp.task('serve', ['style'], function(){
+gulp.task('default', ['style'], function(){
     var options = {
         script: 'src/server/app.js',
         delayTime: 1,
