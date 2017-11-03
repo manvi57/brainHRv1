@@ -4,8 +4,8 @@ var express = require('express'),
     authenticate = require ('./routes/authenticate.js'),
     contactUs = require ('./routes/contactUsPost.js');
     var user = require('./routes/user.js');
-    var chalk = require('chalk');  
-    
+    var chalk = require('chalk');
+
     var app = express();
 
 var port = process.env.PORT || 5000;
@@ -19,6 +19,8 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.post('/authenticate',authenticate.auth );
 app.post('/contact',contactUs.saveContactInfo);
 app.post('/user',user.saveUser);
+
+user.initUser();
 
 console.log(chalk.blue('Loading Server on Port ' + port));
 app.listen(port,function(){
