@@ -1,12 +1,11 @@
 var express = require('express'),
     bodyParser = require ('body-parser'),
     chalk = require('chalk');
+var app = express();
   /*db = require('./model/dataModel.js'),
     authenticate = require ('./routes/authenticate.js'),
     contactUs = require ('./routes/contactUsPost.js');
     var user = require('./routes/user.js');
-
-    var app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
